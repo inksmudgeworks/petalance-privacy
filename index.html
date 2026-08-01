@@ -104,6 +104,32 @@
         letter-spacing: 0.14em;
       }
 
+      .header-actions {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+      }
+
+      .language-switch {
+        display: inline-flex;
+        min-width: 42px;
+        min-height: 32px;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid rgb(255 255 255 / 22%);
+        border-radius: 9px;
+        color: var(--text);
+        font-size: 0.76rem;
+        font-weight: 800;
+        letter-spacing: 0.06em;
+        text-decoration: none;
+      }
+
+      .language-switch:hover {
+        border-color: var(--gold);
+        color: var(--gold);
+      }
+
       main {
         padding-block: 72px 48px;
       }
@@ -268,7 +294,10 @@
           <img class="brand-mark" src="assets/petalance-icon.png" alt="" width="36" height="36" />
           <span>Petalance</span>
         </a>
-        <span class="header-label">PRIVACY POLICY</span>
+        <div class="header-actions">
+          <span class="header-label">PRIVACY POLICY</span>
+          <a class="language-switch" href="en/" lang="en" hreflang="en">EN</a>
+        </div>
       </div>
     </header>
 
