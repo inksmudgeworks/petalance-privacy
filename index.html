@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#030405" />
+    <meta
+      name="description"
+      content="Petalanceにおける利用者情報の取り扱いについて説明するプライバシーポリシーです。"
+    />
+    <title>プライバシーポリシー | Petalance</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        --background: #030405;
+        --surface: #08090b;
+        --surface-soft: #0b0d10;
+        --border: #1f2228;
+        --text: #f7f7f8;
+        --muted: #a4a6ad;
+        --gold: #ffc94a;
+        --pink: #ff2f71;
+        --green: #57d978;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        min-width: 320px;
+        margin: 0;
+        background:
+          radial-gradient(circle at 12% 8%, rgb(255 47 113 / 12%), transparent 28rem),
+          radial-gradient(circle at 88% 18%, rgb(255 201 74 / 9%), transparent 24rem),
+          var(--background);
+        color: var(--text);
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic UI",
+          "Noto Sans JP", sans-serif;
+        line-height: 1.8;
+      }
+
+      a {
+        color: var(--gold);
+        text-underline-offset: 0.2em;
+      }
+
+      a:hover {
+        color: #ffdc85;
+      }
+
+      .site-header {
+        position: sticky;
+        z-index: 10;
+        top: 0;
+        border-bottom: 1px solid rgb(255 255 255 / 7%);
+        background: rgb(3 4 5 / 82%);
+        backdrop-filter: blur(18px);
+      }
+
+      .header-inner,
+      main,
+      footer {
+        width: min(100% - 32px, 820px);
+        margin-inline: auto;
+      }
+
+      .header-inner {
+        display: flex;
+        min-height: 68px;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 11px;
+        color: var(--text);
+        font-size: 1rem;
+        font-weight: 800;
+        letter-spacing: 0.04em;
+        text-decoration: none;
+      }
+
+      .brand-mark {
+        width: 36px;
+        height: 36px;
+        border-radius: 10px;
+        object-fit: cover;
+        box-shadow: 0 0 18px rgb(255 47 113 / 22%);
+      }
+
+      .header-label {
+        color: var(--gold);
+        font-size: 0.72rem;
+        font-weight: 800;
+        letter-spacing: 0.14em;
+      }
+
+      main {
+        padding-block: 72px 48px;
+      }
+
+      .hero {
+        margin-bottom: 36px;
+        text-align: center;
+      }
+
+      .eyebrow {
+        margin: 0 0 10px;
+        color: var(--gold);
+        font-size: 0.75rem;
+        font-weight: 800;
+        letter-spacing: 0.18em;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(1.9rem, 6vw, 3.25rem);
+        line-height: 1.25;
+        letter-spacing: 0.02em;
+      }
+
+      .updated {
+        margin: 14px 0 0;
+        color: var(--muted);
+        font-size: 0.85rem;
+      }
+
+      .intro {
+        margin: 0 auto 34px;
+        color: #d5d6da;
+        text-align: center;
+      }
+
+      .policy {
+        display: grid;
+        gap: 14px;
+      }
+
+      section {
+        padding: clamp(22px, 5vw, 32px);
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        background: linear-gradient(145deg, rgb(11 13 16 / 96%), rgb(8 9 11 / 96%));
+        box-shadow: 0 20px 50px rgb(0 0 0 / 18%);
+      }
+
+      h2 {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin: 0 0 13px;
+        font-size: 1.05rem;
+        line-height: 1.45;
+      }
+
+      .number {
+        display: grid;
+        flex: 0 0 auto;
+        width: 29px;
+        height: 29px;
+        place-items: center;
+        border: 1px solid rgb(255 201 74 / 45%);
+        border-radius: 50%;
+        color: var(--gold);
+        font-size: 0.78rem;
+      }
+
+      p {
+        margin: 0;
+      }
+
+      ul {
+        margin: 12px 0 0;
+        padding-left: 1.35rem;
+      }
+
+      li + li {
+        margin-top: 5px;
+      }
+
+      li::marker {
+        color: var(--pink);
+      }
+
+      .note {
+        margin-top: 14px;
+        padding: 12px 14px;
+        border-left: 3px solid var(--green);
+        border-radius: 7px;
+        background: rgb(87 217 120 / 7%);
+        color: #d8efde;
+        font-size: 0.9rem;
+      }
+
+      address {
+        margin-top: 12px;
+        font-style: normal;
+      }
+
+      .contact-row {
+        display: grid;
+        grid-template-columns: 90px 1fr;
+        gap: 12px;
+        padding-block: 5px;
+      }
+
+      .contact-label {
+        color: var(--muted);
+      }
+
+      .placeholder {
+        color: #d1d2d6;
+        overflow-wrap: anywhere;
+      }
+
+      footer {
+        padding-block: 12px 42px;
+        color: #72747b;
+        font-size: 0.75rem;
+        text-align: center;
+      }
+
+      @media (max-width: 520px) {
+        .header-inner,
+        main,
+        footer {
+          width: min(100% - 24px, 820px);
+        }
+
+        main {
+          padding-top: 48px;
+        }
+
+        .header-label {
+          display: none;
+        }
+
+        section {
+          border-radius: 15px;
+        }
+
+        .contact-row {
+          grid-template-columns: 1fr;
+          gap: 0;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="#top" aria-label="Petalance プライバシーポリシーの先頭へ">
+          <img class="brand-mark" src="assets/petalance-icon.png" alt="" width="36" height="36" />
+          <span>Petalance</span>
+        </a>
+        <span class="header-label">PRIVACY POLICY</span>
+      </div>
+    </header>
+
+    <main id="top">
+      <div class="hero">
+        <p class="eyebrow">PETALANCE</p>
+        <h1>プライバシーポリシー</h1>
+        <p class="updated">最終更新日：2026年8月1日</p>
+      </div>
+
+      <p class="intro">
+        Petalance（以下「本アプリ」）をご利用いただきありがとうございます。<br />
+        本プライバシーポリシーは、本アプリにおける利用者情報の取り扱いについて説明するものです。
+      </p>
+
+      <div class="policy">
+        <section>
+          <h2><span class="number">1</span>取得する情報</h2>
+          <p>本アプリでは、ユーザーが入力する以下の情報を取り扱う場合があります。</p>
+          <ul>
+            <li>習慣・アクティビティ名</li>
+            <li>実施履歴</li>
+            <li>カスタマイズ設定</li>
+            <li>アプリ設定</li>
+          </ul>
+          <p class="note">これらの習慣データは、原則としてお使いの端末内に保存されます。</p>
+        </section>
+
+        <section>
+          <h2><span class="number">2</span>自動的に取得される情報</h2>
+          <p>本アプリまたは利用する第三者サービスにより、以下の情報が取得される場合があります。</p>
+          <ul>
+            <li>端末情報およびOSバージョン</li>
+            <li>アプリのクラッシュ・動作情報</li>
+            <li>広告表示に必要な情報</li>
+            <li>購入状態（プレミアム利用状況）</li>
+            <li>購入検証用のインストールID、商品IDおよびストア取引情報</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2><span class="number">3</span>広告について</h2>
+          <p>
+            無料版ではGoogle AdMobを利用して広告を表示します。広告配信、効果測定および不正防止のため、Googleが広告識別子、端末情報などを利用する場合があります。
+          </p>
+          <p class="note">
+            Googleによるデータ利用については、<a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Googleプライバシーポリシー</a>をご確認ください。
+          </p>
+        </section>
+
+        <section>
+          <h2><span class="number">4</span>アプリ内課金について</h2>
+          <p>
+            プレミアム機能の購入および開発者へのチップは、Apple App StoreまたはGoogle Playを通じて処理されます。本アプリがクレジットカード番号などの決済情報を取得することはありません。
+          </p>
+          <p class="note">
+            購入の検証、復元および返金・取消の反映に必要な購入状態と識別情報は、開発者が管理するサーバーへ送信され、保存される場合があります。
+          </p>
+        </section>
+
+        <section>
+          <h2><span class="number">5</span>データの保存</h2>
+          <p>
+            ユーザーが入力した習慣・履歴・カスタマイズ情報は、原則として端末内に保存されます。購入検証に必要な情報は、プレミアム権利の管理、不正利用防止、復元、返金および取消への対応のため、クラウドサーバーに保存される場合があります。
+          </p>
+        </section>
+
+        <section>
+          <h2><span class="number">6</span>通知について</h2>
+          <p>
+            本アプリは、ユーザーが許可した場合にリマインダー通知を利用します。通知内容と通知時刻は端末内で管理され、リマインダーのために習慣データが第三者へ送信されることはありません。
+          </p>
+        </section>
+
+        <section>
+          <h2><span class="number">7</span>第三者サービス</h2>
+          <p>本アプリでは、以下の第三者サービスを利用する場合があります。</p>
+          <ul>
+            <li>Google AdMob</li>
+            <li>Apple App Store／Apple In-App Purchase</li>
+            <li>Google Play／Google Play Billing</li>
+            <li>Google Cloud Firestore</li>
+          </ul>
+          <p class="note">各サービスにおける情報の取り扱いは、各提供元のプライバシーポリシーをご確認ください。</p>
+        </section>
+
+        <section>
+          <h2><span class="number">8</span>未成年の利用</h2>
+          <p>未成年の方は、必要に応じて保護者の同意を得たうえで本アプリをご利用ください。</p>
+        </section>
+
+        <section>
+          <h2><span class="number">9</span>プライバシーポリシーの変更</h2>
+          <p>
+            本ポリシーは、法令の変更、本アプリの機能追加または利用サービスの変更などに応じて改定される場合があります。重要な変更がある場合は、本ページなどの適切な方法でお知らせします。
+          </p>
+        </section>
+
+        <section>
+          <h2><span class="number">10</span>お問い合わせ</h2>
+          <p>本ポリシーまたは利用者情報の取り扱いに関するお問い合わせは、以下までお願いいたします。</p>
+          <address>
+            <div class="contact-row">
+              <span class="contact-label">Developer</span>
+              <strong>Ink Smudge Works</strong>
+            </div>
+            <div class="contact-row">
+              <span class="contact-label">Email</span>
+              <a href="mailto:inksmudgeworks@gmail.com">inksmudgeworks@gmail.com</a>
+            </div>
+          </address>
+        </section>
+      </div>
+    </main>
+
+    <footer>© 2026 Ink Smudge Works. All rights reserved.</footer>
+  </body>
+</html>
